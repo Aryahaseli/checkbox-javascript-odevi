@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="checkbox-container">
+        <label for="myCheckbox1">
+            <input type="checkbox" id="myCheckbox1" onchange="checkCheckbox1()"> Seyahat
+        </label>
+        <p id="display1"></p>
+    </div>
+
+    <div class="checkbox-container">
+        <label for="myCheckbox2">
+            <input type="checkbox" id="myCheckbox2" onchange="checkCheckbox2()"> Yemek
+        </label>
+        <p id="display2"></p>
+    </div>
+
+    <div class="checkbox-container">
+        <label for="myCheckbox3">
+            <input type="checkbox" id="myCheckbox3" onchange="checkCheckbox3()"> Spor
+        </label>
+        <p id="display3"></p>
+    </div>
+
+    <div class="checkbox-container">
+        <label for="myCheckbox4">
+            <input type="checkbox" id="myCheckbox4" onchange="checkCheckbox4()"> Sinema
+        </label>
+        <p id="display4"></p>
+    </div>
+
+    <div class="checkbox-container">
+        <label for="myCheckbox5">
+            <input type="checkbox" id="myCheckbox5" onchange="checkCheckbox5()"> Fitness
+        </label>
+        <p id="display5"></p>
+    </div>
+
+    <script>
+        const etiket1 = document.getElementById('display1');
+        const etiket2 = document.getElementById('display2');
+        const etiket3 = document.getElementById('display3');
+        const etiket4 = document.getElementById('display4');
+        const etiket5 = document.getElementById('display5');
+
+        function checkCheckbox1() {
+            var checkbox1 = document.getElementById("myCheckbox1");
+
+            if (checkbox1.checked) {
+                etiket1.innerHTML = "seyahat";
+            } else {
+                etiket1.innerHTML = " ";
+            }
+        }
+
+        function checkCheckbox2() {
+            var checkbox2 = document.getElementById("myCheckbox2");
+
+            if (checkbox2.checked) {
+                etiket2.innerHTML = "yemek";
+            } else {
+                etiket2.innerHTML = " ";
+            }
+        }
+
+        function checkCheckbox3() {
+            var checkbox3 = document.getElementById("myCheckbox3");
+
+            if (checkbox3.checked) {
+                etiket3.innerHTML = "spor";
+            } else {
+                etiket3.innerHTML = " ";
+            }
+        }
+
+        function checkCheckbox4() {
+            var checkbox4 = document.getElementById("myCheckbox4");
+
+            if (checkbox4.checked) {
+                etiket4.innerHTML = "sinema";
+            } else {
+                etiket4.innerHTML = " ";
+            }
+        }
+
+        function checkCheckbox5() {
+            var checkbox5 = document.getElementById("myCheckbox5");
+
+            if (checkbox5.checked) {
+                etiket5.innerHTML = "fitness";
+            } else {
+                etiket5.innerHTML = " ";
+            }
+        }
+    </script>
+
+</body>
+</html>
